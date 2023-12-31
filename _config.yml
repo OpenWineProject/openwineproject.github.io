@@ -5,4 +5,5 @@ theme: just-the-docs
 url: https://www.openwineproject.org
 
 aux_links:
+  Open Wine Initiative: https://openwineinitiative.org
   Project Repository: https://github.com/OpenWineProject
