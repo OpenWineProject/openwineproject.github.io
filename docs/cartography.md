@@ -11,8 +11,7 @@ Objective: Map the wine world.
 
 The aspirations for this project are as board as the topic itself is defined:
 
-> **cartography** /kär-tŏg′rə-fē/
-> noun
+> **cartography** /kär-tŏg′rə-fē/ noun
 > 1. The art or technique of making maps or charts.
 > 2. The art or business of forming charts or maps.
 > 3. The making of maps and charts.
