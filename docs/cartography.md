@@ -3,6 +3,7 @@ title: Wine Cartography
 nav_order: 1
 layout: default
 parent: Projects
+has_children: true
 ---
 
 # Wine Cartography
@@ -20,7 +21,7 @@ The aspirations for this project are as board as the topic itself is defined:
 
 Two very smart examples provided by the UC Davis Library GitHub and, as best as I can tell, [Ronan Guilloux](https://github.com/ronanguilloux) of OpenWines in France, [cite source] and [cite source], are providing some base assumptions and guiding principles. 
 
-
+[Tag:lanuse=vineyard](https://wiki.openstreetmap.org/wiki/Tag:landuse%3Dvineyard)
 
 ## Structural Proposition
 
@@ -34,4 +35,6 @@ Two very smart examples provided by the UC Davis Library GitHub and, as best as 
 
 - [OpenWeatherMaps](https://openweathermap.org/history) - Historical weather data ([API's](https://openweathermap.org/api#history) and [downloads](https://openweathermap.org/history-bulk#examples).)
 - [Leaflet.draw](https://github.com/Leaflet/Leaflet.draw#readme) - Developer tool for drawing with Leaflet.
+- [Geoman.io](https://www.geoman.io/docs/toolbar)
 - [geojson.io - Feaure Collection/Features validation (basic mapping tools)](http://geojson.io)
+``
