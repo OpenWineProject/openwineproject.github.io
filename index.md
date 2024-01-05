@@ -6,7 +6,7 @@ nav_order: 1
 
 # Open Wine Project
 
-The Open Wine Project is currently a catchall for technology related topics that arise in Open Wine Intiative forums' and special interest groups (SIG's). The learn more about the Open Wine Initiative and the Open Wine Project visit the [about](/about) page. 
+The Open Wine Project is currently a catchall for technology related topics that arise in Open Wine Intiative forums and special interest groups (SIG's). The learn more about the Open Wine Initiative and the Open Wine Project visit the [about](/about) page. 
 
 **Get involved!** Submit an [invitation request](mailto:openwineproject@googlegroups.com) for access to community tools.
 
