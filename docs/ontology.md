@@ -6,6 +6,7 @@ parent: Projects
 ---
 
 # Wine Ontology
+Draft for the Open Wine Language (OWL).
 
 
 ## Resources
