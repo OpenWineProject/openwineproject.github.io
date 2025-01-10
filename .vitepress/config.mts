@@ -7,6 +7,8 @@ export default defineConfig({
 
   cleanUrls: true,
 
+  head: [["link", { rel: "icon", href: "/favicon.ico" }]],
+
   // Set default language to US English.
   lang: "en-US",
 
@@ -26,8 +28,8 @@ export default defineConfig({
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Explore", link: "/explore" },
-      { text: "About", link: "/about" },
+      { text: "Explore", link: "/explore/" },
+      { text: "About", link: "/about/" },
     ],
 
     sidebar: {
@@ -58,24 +60,19 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
   return [
     {
       text: "Open Projects",
-      link: "/",
       items: [
-        { text: "Cartography", link: "/europe" },
-        { text: "Oenology", link: "/" },
-        { text: "Ontology", link: "/americas" },
+        { text: "Cartography", link: "/projects/cartography" },
+        { text: "Oenology", link: "/projects/oenology" },
+        { text: "Ontology", link: "/projects/ontology" },
       ],
     },
     {
       text: "Community",
-      link: "/community",
-    },
-    {
-      text: "Organization",
-      link: "/",
+      link: "#community",
     },
     {
       text: "Contribute",
-      link: "/community/contribute",
+      link: "#contribute",
     },
   ];
 }
