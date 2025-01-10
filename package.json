@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.16",
+    "vitepress": "^1.5.0"
+  },
+  "dependencies": {
+    "leaflet": "^1.9.4"
+  }
+}

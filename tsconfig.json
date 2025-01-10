@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "*": ["types/*"]
+    }
+  },
+  "include": [
+    "types/**/*.d.ts",
+    "node_modules/@types",
+    ".vitepress/**/*.ts",
+    "components/**/*.vue"
+  ],
+  "exclude": ["node_modules"]
+}
