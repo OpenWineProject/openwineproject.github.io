@@ -12,30 +12,28 @@ export default defineConfig({
   // Set default language to US English.
   lang: "en-US",
 
-  locales: {
-    root: {
-      label: "English",
-      lang: "en",
-      dir: "i18n/en",
-    },
-    fr: {
-      label: "French",
-      lang: "fr",
-      dir: "i18n/fr",
-    },
-  },
+  // locales: {
+  //   root: {
+  //     label: "English",
+  //     lang: "en",
+  //     dir: "i18n/en",
+  //   },
+  //   fr: {
+  //     label: "French",
+  //     lang: "fr",
+  //     dir: "i18n/fr",
+  //   },
+  // },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Explore", link: "/explore/" },
-      { text: "Study", link: "/study" },
       { text: "About", link: "/about/" },
     ],
 
     sidebar: {
       "/explore/": { base: "/explore/", items: sidebarExplore() },
-      "/study/": { base: "/sudy/", items: sidebarStudy() },
       "/about/": { base: "/about/", items: sidebarAbout() },
     },
 
@@ -142,27 +140,6 @@ function sidebarExplore(): DefaultTheme.SidebarItem[] {
           link: "/united-states/washington",
         },
       ],
-    },
-  ];
-}
-
-function sidebarStudy(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: "Grapes",
-      items: [
-        { text: "Albarino", link: "/projects/cartography" },
-        { text: "Oenology", link: "/projects/oenology" },
-        { text: "Ontology", link: "/projects/ontology" },
-      ],
-    },
-    {
-      text: "Vocabulary",
-      items: [{ text: "Method Chamaign" }],
-    },
-    {
-      text: "Proccesses",
-      items: [{ text: "Method Chamaign" }],
     },
   ];
 }
