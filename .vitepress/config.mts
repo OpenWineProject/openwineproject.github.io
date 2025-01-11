@@ -84,32 +84,6 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
 function sidebarExplore(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "World Maps",
-      link: "/",
-      items: [
-        { text: "Europe", link: "/europe" },
-        { text: "Americas", link: "/americas" },
-        { text: "Asia", link: "/asia" },
-      ],
-    },
-    {
-      text: "France",
-      link: "/france",
-      // TODO: What is causing this type check issue?
-      // @ts-expect-error
-      items: [
-        { text: "Bordeaux", link: "/france/bordeaux" },
-        { text: "Burgundy (Bourgogne)", link: "/france" },
-        { text: "Champagne", link: "/france" },
-        { text: "Languedoc-Roussillon", link: "/france" },
-        { text: "Loire Valley", link: "/france" },
-        { text: "The Rhône Valley", link: "/france" },
-        { text: "Alsace", link: "/france" },
-        { text: "Savoie and the Jura", link: "/france" },
-        ,
-      ],
-    },
-    {
       text: "United States",
       link: "/",
       base: "/explore/united-states",
@@ -134,10 +108,6 @@ function sidebarExplore(): DefaultTheme.SidebarItem[] {
           //     link: "/south-coast",
           //   },
           // ],
-        },
-        {
-          text: "Washington",
-          link: "/united-states/washington",
         },
       ],
     },
