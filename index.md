@@ -13,15 +13,14 @@ hero:
     - theme: alt
       text: Learn more
       link: /about
-
-features:
-  - title: See
-    link: /explore
-    details: Explore the world of wine through maps compiled by community contributors.
-  - title: Study
-    link: /about
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Share
-    link: /community
-    details: Learn more about what we do and contribute your experience.
+# features:
+#   - title: See
+#     link: /explore
+#     details: Explore the world of wine through maps compiled by community contributors.
+#   - title: Study
+#     link: /exlore
+#     details:
+#   - title: Share
+#     link: /about
+#     details: Learn more about what we do and contribute your experience.
 ---

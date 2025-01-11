@@ -12,30 +12,28 @@ export default defineConfig({
   // Set default language to US English.
   lang: "en-US",
 
-  locales: {
-    root: {
-      label: "English",
-      lang: "en",
-      dir: "i18n/en",
-    },
-    fr: {
-      label: "French",
-      lang: "fr",
-      dir: "i18n/fr",
-    },
-  },
+  // locales: {
+  //   root: {
+  //     label: "English",
+  //     lang: "en",
+  //     dir: "i18n/en",
+  //   },
+  //   fr: {
+  //     label: "French",
+  //     lang: "fr",
+  //     dir: "i18n/fr",
+  //   },
+  // },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Explore", link: "/explore/" },
-      { text: "Study", link: "/study" },
       { text: "About", link: "/about/" },
     ],
 
     sidebar: {
       "/explore/": { base: "/explore/", items: sidebarExplore() },
-      "/study/": { base: "/sudy/", items: sidebarStudy() },
       "/about/": { base: "/about/", items: sidebarAbout() },
     },
 
@@ -86,32 +84,6 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
 function sidebarExplore(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "World Maps",
-      link: "/",
-      items: [
-        { text: "Europe", link: "/europe" },
-        { text: "Americas", link: "/americas" },
-        { text: "Asia", link: "/asia" },
-      ],
-    },
-    {
-      text: "France",
-      link: "/france",
-      // TODO: What is causing this type check issue?
-      // @ts-expect-error
-      items: [
-        { text: "Bordeaux", link: "/france/bordeaux" },
-        { text: "Burgundy (Bourgogne)", link: "/france" },
-        { text: "Champagne", link: "/france" },
-        { text: "Languedoc-Roussillon", link: "/france" },
-        { text: "Loire Valley", link: "/france" },
-        { text: "The Rhône Valley", link: "/france" },
-        { text: "Alsace", link: "/france" },
-        { text: "Savoie and the Jura", link: "/france" },
-        ,
-      ],
-    },
-    {
       text: "United States",
       link: "/",
       base: "/explore/united-states",
@@ -137,32 +109,7 @@ function sidebarExplore(): DefaultTheme.SidebarItem[] {
           //   },
           // ],
         },
-        {
-          text: "Washington",
-          link: "/united-states/washington",
-        },
       ],
-    },
-  ];
-}
-
-function sidebarStudy(): DefaultTheme.SidebarItem[] {
-  return [
-    {
-      text: "Grapes",
-      items: [
-        { text: "Albarino", link: "/projects/cartography" },
-        { text: "Oenology", link: "/projects/oenology" },
-        { text: "Ontology", link: "/projects/ontology" },
-      ],
-    },
-    {
-      text: "Vocabulary",
-      items: [{ text: "Method Chamaign" }],
-    },
-    {
-      text: "Proccesses",
-      items: [{ text: "Method Chamaign" }],
     },
   ];
 }
