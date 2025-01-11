@@ -1,5 +1,4 @@
 # Workflow for building and deploying the Open Working Group website to GitHub Pages
-#
 name: Deploy https://openwineproject.org to GitHub Pages
 
 on:
