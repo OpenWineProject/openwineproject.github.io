@@ -29,11 +29,13 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "Explore", link: "/explore/" },
+      { text: "Study", link: "/study" },
       { text: "About", link: "/about/" },
     ],
 
     sidebar: {
       "/explore/": { base: "/explore/", items: sidebarExplore() },
+      "/study/": { base: "/sudy/", items: sidebarStudy() },
       "/about/": { base: "/about/", items: sidebarAbout() },
     },
 
@@ -51,9 +53,9 @@ export default defineConfig({
     },
   },
 
-  mapsConfig: {
-    apiKey: "Hello world!",
-  },
+  // mapsConfig: {
+  //   apiKey: "Hello world!",
+  // },
 });
 
 function sidebarAbout(): DefaultTheme.SidebarItem[] {
@@ -119,27 +121,48 @@ function sidebarExplore(): DefaultTheme.SidebarItem[] {
           text: "California",
           link: "/",
           base: "/explore/united-states/california",
-          collapsed: true,
-          items: [
-            {
-              text: "North Coast",
-              link: "/north-coast",
-            },
-            {
-              text: "Central Coast",
-              link: "/central-coast",
-            },
-            {
-              text: "South Coast",
-              link: "/south-coast",
-            },
-          ],
+          // collapsed: true,
+          // items: [
+          //   {
+          //     text: "North Coast",
+          //     link: "/north-coast",
+          //   },
+          //   {
+          //     text: "Central Coast",
+          //     link: "/central-coast",
+          //   },
+          //   {
+          //     text: "South Coast",
+          //     link: "/south-coast",
+          //   },
+          // ],
         },
         {
           text: "Washington",
           link: "/united-states/washington",
         },
       ],
+    },
+  ];
+}
+
+function sidebarStudy(): DefaultTheme.SidebarItem[] {
+  return [
+    {
+      text: "Grapes",
+      items: [
+        { text: "Albarino", link: "/projects/cartography" },
+        { text: "Oenology", link: "/projects/oenology" },
+        { text: "Ontology", link: "/projects/ontology" },
+      ],
+    },
+    {
+      text: "Vocabulary",
+      items: [{ text: "Method Chamaign" }],
+    },
+    {
+      text: "Proccesses",
+      items: [{ text: "Method Chamaign" }],
     },
   ];
 }

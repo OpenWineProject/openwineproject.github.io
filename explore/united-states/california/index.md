@@ -2,9 +2,9 @@
 
 California is home to a diverse variety of micro-climates, terrain and geology ideal for wine production.
 
-<MapComponent lat="36.48" lng="-118.66" zoom="6" src="avas.geojson" />
+<MapComponent lat="36.48" lng="-118.66" zoom="5" src="avas.geojson" />
 
-## Nappa Valley
+<!-- ## Nappa Valley
 
 ## Central Coast
 
@@ -16,4 +16,4 @@ California is home to a diverse variety of micro-climates, terrain and geology i
 
 #### Santa Rita Hills
 
-## South Coast
+## South Coast -->
