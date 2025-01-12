@@ -17,6 +17,13 @@ export default {
   },
   enhanceApp({ app, router, siteData }) {
     // ...
+    router.onAfterRouteChanged = (to) => {
+      if (typeof window !== "undefined" && window.ga) {
+        window.ga("set", "page", to);
+        window.ga("send", "pageview");
+      }
+    };
+
     app.component("MapComponent", MapComponent);
   },
 } satisfies Theme;
