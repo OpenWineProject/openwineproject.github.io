@@ -8,6 +8,10 @@ export default defineConfig({
 
   cleanUrls: true,
 
+  sitemap: {
+    hostname: "https://openwineproject.org",
+  },
+
   head: [
     ["link", { rel: "icon", href: "/favicon.ico" }],
     [
@@ -28,18 +32,18 @@ export default defineConfig({
   // Set default language to US English.
   lang: "en-US",
 
-  // locales: {
-  //   root: {
-  //     label: "English",
-  //     lang: "en",
-  //     dir: "i18n/en",
-  //   },
-  //   fr: {
-  //     label: "French",
-  //     lang: "fr",
-  //     dir: "i18n/fr",
-  //   },
-  // },
+  locales: {
+    root: {
+      label: "English",
+      lang: "en",
+      dir: "i18n/en-US",
+    },
+    //   fr: {
+    //     label: "French",
+    //     lang: "fr",
+    //     dir: "i18n/fr",
+    //   },
+  },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -53,6 +57,8 @@ export default defineConfig({
       "/about/": { base: "/about/", items: sidebarAbout() },
     },
 
+    externalLinkIcon: true,
+
     search: {
       provider: "local",
     },
@@ -62,6 +68,8 @@ export default defineConfig({
     ],
 
     footer: {
+      message:
+        'Released under the <a href="https://raw.githubusercontent.com/OpenWineProject/openwineproject.github.io/refs/heads/main/LICENSE" target="_blank">MIT License</a>.',
       copyright:
         "Copyright &copy; " + new Date().getFullYear() + " Open Wine Project.",
     },
