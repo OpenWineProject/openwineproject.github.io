@@ -2,9 +2,13 @@
 
 California is home to a diverse variety of micro-climates, terrain and geology ideal for wine production.
 
-<MapComponent lat="36.48" lng="-118.66" zoom="5" src="avas.geojson" />
+<ClientOnly>
+<MapComponent lat="36.48" lng="-118.66" zoom="5" src="https://raw.githubusercontent.com/OpenWineProject/geography/refs/heads/develop/us-ca.geojson" />
+</ClientOnly>
 
-<!-- ## Nappa Valley
+<!-- ## Northern California
+
+### Nappa Valley
 
 ## Central Coast
 
@@ -13,6 +17,8 @@ California is home to a diverse variety of micro-climates, terrain and geology i
 ### Santa Barbara County
 
 ### Santa Maria Valley
+
+#### Happy Canyon
 
 #### Santa Rita Hills
 

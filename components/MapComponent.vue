@@ -85,15 +85,12 @@ export default defineComponent({
                       return {color: 'purple', weight: .75};
                   }
               }).bindTooltip(function (layer) {
-                return "Placeholder"
-                  // return "<b>Name: </b>" + layer.feature.properties.name + "<br><b>Date Created: </b>" + layer.feature.properties.created;
+                  return "<b>Name: </b>" + layer.feature.properties.name + "<br><b>Date Created: </b>" + layer.feature.properties.created;
               }).addTo(map);
               
               layerControl.addOverlay(avas, "AVA's").addTo(map);
           });      
     });
-
-
 
     return { mapContainer };
   },
