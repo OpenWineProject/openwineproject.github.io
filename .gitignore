@@ -1,4 +1,11 @@
 .DS_Store
-dist
+.idea
+.vscode
+*.log
+*.tgz
+*.tar.gz
+!CHANGELOG.md
 node_modules
-.vitepress/cache
+pnpm-lock.yaml
+cache
+dist
