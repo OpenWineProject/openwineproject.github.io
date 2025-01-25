@@ -1,23 +1,23 @@
-import { DefaultTheme, defineConfig } from "vitepress";
-import { Script } from "vm";
+import { DefaultTheme, defineConfig } from 'vitepress'
+import { Script } from 'vm'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Open Wine Project",
-  description: "A VitePress Site",
+  title: 'Open Wine Project',
+  description: 'A VitePress Site',
 
   // base: "/docs",
 
   cleanUrls: true,
 
   sitemap: {
-    hostname: "https://openwineproject.org",
+    hostname: 'https://openwineproject.org'
   },
 
   head: [
-    ["link", { rel: "icon", href: "/favicon.ico" }],
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
     [
-      "script",
+      'script',
       {},
       `
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -27,80 +27,80 @@ export default defineConfig({
 
         ga('create', 'G-422248986', 'auto');
         ga('send', 'pageview');
-    `,
-    ],
+    `
+    ]
   ],
 
   // Set default language to US English.
-  lang: "en-US",
+  lang: 'en-US',
 
   locales: {
     root: {
-      label: "English",
-      lang: "en",
-      dir: "i18n/en-US",
+      label: 'English',
+      lang: 'en',
+      dir: 'i18n/en-US'
     },
     fr: {
-      label: "French",
-      lang: "fr",
-      dir: "i18n/fr-FR",
-    },
+      label: 'French',
+      lang: 'fr',
+      dir: 'i18n/fr-FR'
+    }
   },
 
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     nav: [
-      { text: "Explore", link: "/explore/" },
-      { text: "About", link: "/about/" },
+      { text: 'Explore', link: '/explore/' },
+      { text: 'About', link: '/about/' }
     ],
 
     sidebar: {
-      "/explore/": { base: "/explore/", items: sidebarExplore() },
-      "/about/": { base: "/about/", items: sidebarAbout() },
+      '/explore/': { base: '/explore/', items: sidebarExplore() },
+      '/about/': { base: '/about/', items: sidebarAbout() }
     },
 
     externalLinkIcon: true,
 
     search: {
-      provider: "local",
+      provider: 'local'
     },
 
     socialLinks: [
-      { icon: "github", link: "https://github.com/OpenWineProject" },
+      { icon: 'github', link: 'https://github.com/OpenWineProject' }
     ],
 
     footer: {
       message:
         'Released under the <a href="https://raw.githubusercontent.com/OpenWineProject/openwineproject.github.io/refs/heads/main/LICENSE" target="_blank">MIT License</a>.',
       copyright:
-        "Copyright &copy; " + new Date().getFullYear() + " Open Wine Project.",
-    },
-  },
+        'Copyright &copy; ' + new Date().getFullYear() + ' Open Wine Project.'
+    }
+  }
 
   // mapsConfig: {
   //   apiKey: "Hello world!",
   // },
-});
+})
 
 function sidebarAbout(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "Open Projects",
+      text: 'Open Projects',
       items: [
-        { text: "Cartography", link: "/projects/cartography" },
-        { text: "Oenology", link: "/projects/oenology" },
-        { text: "Ontology", link: "/projects/ontology" },
-      ],
+        { text: 'Cartography', link: '/projects/cartography' },
+        { text: 'Oenology', link: '/projects/oenology' },
+        { text: 'Ontology', link: '/projects/ontology' }
+      ]
     },
     {
-      text: "Community",
-      link: "#community",
+      text: 'Community',
+      link: '#community'
     },
     {
-      text: "Contribute",
-      link: "#contribute",
-    },
-  ];
+      text: 'Contribute',
+      link: '#contribute'
+    }
+  ]
 }
 
 /**
@@ -110,15 +110,15 @@ function sidebarAbout(): DefaultTheme.SidebarItem[] {
 function sidebarExplore(): DefaultTheme.SidebarItem[] {
   return [
     {
-      text: "United States",
-      link: "/",
-      base: "/explore/united-states",
+      text: 'United States',
+      link: '/',
+      base: '/explore/united-states',
 
       items: [
         {
-          text: "California",
-          link: "/",
-          base: "/explore/united-states/california",
+          text: 'California',
+          link: '/',
+          base: '/explore/united-states/california'
           // collapsed: true,
           // items: [
           //   {
@@ -134,8 +134,8 @@ function sidebarExplore(): DefaultTheme.SidebarItem[] {
           //     link: "/south-coast",
           //   },
           // ],
-        },
-      ],
-    },
-  ];
+        }
+      ]
+    }
+  ]
 }
