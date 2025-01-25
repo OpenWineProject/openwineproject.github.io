@@ -1,15 +1,57 @@
 {
+  "name": "open-wine-project",
+  "version": "0.0.1-alpha",
+  "description": "Open Wine Project",
+  "keywords": [
+    "wine",
+    "geography",
+    "terminology",
+    "ontology"
+  ],
+  "homepage": "https://openwineproject.org",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:OpenWineProject/openwineproject.github.io.git"
+  },
+  "author": {
+    "name": "Open Wine Project",
+    "email": "openwineproject@googlegroups.com"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": "./dist/index.js",
+    "./dist/*": "./dist/*"
+  },
+  "main": "dist/node/index.js",
+  "types": "types/index.d.ts",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "workspaces": [
+    "docs"
+  ],
   "scripts": {
-    "docs:dev": "vitepress dev",
-    "docs:build": "vitepress build",
-    "docs:preview": "vitepress preview"
+    "docs": "pnpm run docs:dev",
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
+    "lunaria:build": "lunaria build docs",
+    "lunaria:preview": "lunaria preview docs"
   },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "eslint --fix",
+      "prettier --write --ignore-unknown"
+    ]
+  },
+  "packageManager": "pnpm@6.14.0",
   "devDependencies": {
-    "@types/leaflet": "^1.9.16",
-    "@types/node": "^22.10.5",
-    "vitepress": "^1.5.0"
-  },
-  "dependencies": {
-    "leaflet": "^1.9.4"
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
   }
 }

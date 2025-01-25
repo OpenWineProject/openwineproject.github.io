@@ -6,6 +6,8 @@ export default defineConfig({
   title: "Open Wine Project",
   description: "A VitePress Site",
 
+  // base: "/docs",
+
   cleanUrls: true,
 
   sitemap: {
@@ -38,11 +40,11 @@ export default defineConfig({
       lang: "en",
       dir: "i18n/en-US",
     },
-    //   fr: {
-    //     label: "French",
-    //     lang: "fr",
-    //     dir: "i18n/fr",
-    //   },
+    fr: {
+      label: "French",
+      lang: "fr",
+      dir: "i18n/fr-FR",
+    },
   },
 
   themeConfig: {

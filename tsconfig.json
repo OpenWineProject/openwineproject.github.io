@@ -1,16 +1,27 @@
 {
   "compilerOptions": {
-    "baseUrl": ".",
+    "target": "esnext",
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "jsx": "preserve",
+    "lib": ["esnext", "dom", "DOM.Iterable"],
+    "baseUrl": "docs",
+    "types": ["vitepress", "vue"],
     "paths": {
       "*": ["types/*"]
     }
   },
   "include": [
-    "./global.d.ts",
-    "types/**/*.d.ts",
+    "docs/global.d.ts",
+    "types/*.d.ts",
     "node_modules/@types",
-    ".vitepress/**/*.ts",
-    "components/**/*.vue"
+    "docs/.vitepress/**/*.ts",
+    "docs/components/**/*.vue"
   ],
-  "exclude": ["node_modules"]
+  "exclude": ["**/node_modules/**", "**/dist/**"]
 }

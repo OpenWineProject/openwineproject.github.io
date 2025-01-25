@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "Cultivate + Collaborate +"
   text: Catalogue oenology
-  tagline: Define the world of wine, every experience at a time.
+  tagline: Refine the world of wine, every experience at a time.
   actions:
     - theme: brand
       text: Explore ->
